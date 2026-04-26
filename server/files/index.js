@@ -20,25 +20,25 @@ function formatRuntime(runtime) {
 
 function appendMovie(movie, element) {
   new ElementBuilder("article").id(movie.imdbID)
-          .append(new ElementBuilder("img").with("src", movie.Poster))
-          .append(new ElementBuilder("h1").text(movie.Title))
-          .append(new ElementBuilder("p")
-              .append(new ElementBuilder("button").text("Edit")
-                    .listener("click", () => location.href = "edit.html?imdbID=" + movie.imdbID)))
-          .append(new ParagraphBuilder().items(
-              "Runtime " + formatRuntime(movie.Runtime),
-              "\u2022",
-              "Released on " +
-                new Date(movie.Released).toLocaleDateString("en-US")))
-          .append(new ParagraphBuilder().childClass("genre").items(movie.Genres))
-          .append(new ElementBuilder("p").text(movie.Plot))
-          .append(new ElementBuilder("h2").pluralizedText("Director", movie.Directors))
-          .append(new ListBuilder().items(movie.Directors))
-          .append(new ElementBuilder("h2").pluralizedText("Writer", movie.Writers))
-          .append(new ListBuilder().items(movie.Writers))
-          .append(new ElementBuilder("h2").pluralizedText("Actor", movie.Actors))
-          .append(new ListBuilder().items(movie.Actors))
-          .appendTo(element);
+    .append(new ElementBuilder("img").with("src", movie.Poster))
+    .append(new ElementBuilder("h1").text(movie.Title))
+    .append(new ElementBuilder("p")
+      .append(new ElementBuilder("button").text("Edit")
+        .listener("click", () => location.href = "edit.html?imdbID=" + movie.imdbID)))
+    .append(new ParagraphBuilder().items(
+      "Runtime " + formatRuntime(movie.Runtime),
+      "\u2022",
+      "Released on " +
+      new Date(movie.Released).toLocaleDateString("en-US")))
+    .append(new ParagraphBuilder().childClass("genre").items(movie.Genres))
+    .append(new ElementBuilder("p").text(movie.Plot))
+    .append(new ElementBuilder("h2").pluralizedText("Director", movie.Directors))
+    .append(new ListBuilder().items(movie.Directors))
+    .append(new ElementBuilder("h2").pluralizedText("Writer", movie.Writers))
+    .append(new ListBuilder().items(movie.Writers))
+    .append(new ElementBuilder("h2").pluralizedText("Actor", movie.Actors))
+    .append(new ListBuilder().items(movie.Actors))
+    .appendTo(element);
 }
 
 function loadMovies(genre) {
@@ -60,8 +60,11 @@ function loadMovies(genre) {
     }
   }
 
-  const url = new URL("/movies", location.href)
+  const url = new URL("/movies", location.href);
   /* Task 1.4. Add query parameter to the url if a genre is given */
+  if (genre) {
+    url.searchParams.set("genre", genre);
+  }
 
   xhr.open("GET", url)
   xhr.send()
@@ -77,6 +80,24 @@ window.onload = function () {
          initialize them with a click handler that calls the 
          loadMovies(...) function above. */
       const genres = JSON.parse(xhr.responseText);
+
+      new ElementBuilder("li")
+        .append(
+          new ElementBuilder("button")
+            .text("All")
+            .listener("click", () => loadMovies())
+        )
+        .appendTo(listElement);
+
+      for (const genre of genres) {
+        new ElementBuilder("li")
+          .append(
+            new ElementBuilder("button")
+              .text(genre)
+              .listener("click", () => loadMovies(genre))
+          )
+          .appendTo(listElement);
+      }
 
       /* When a first button exists, we click it to load all movies. */
       const firstButton = document.querySelector("nav button");
