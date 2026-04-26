@@ -1,5 +1,5 @@
 module.exports = {
-    tt8367814: {
+  tt8367814: {
     imdbID: "tt8367814",
     Title: "The Gentlemen",
     Released: "2020-01-24",
@@ -44,20 +44,109 @@ module.exports = {
     imdbRating: 8.7
   },
 
-  tt0084787: {
-    imdbID: "tt0084787",
-    Title: "The Thing",
-    Released: "1982-06-25",
-    Runtime: 109,
-    Genres: ["Horror", "Mystery", "Sci-Fi"],
-    Directors: ["John Carpenter"],
-    Writers: ["Bill Lancaster", "John W. Campbell Jr."],
-    Actors: ["Kurt Russell", "Wilford Brimley", "Keith David"],
-    Plot: "A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims.",
-    Poster:
-      "https://m.media-amazon.com/images/M/MV5BNGViZWZmM2EtNGYzZi00ZDAyLTk3ODMtNzIyZTBjN2Y1NmM1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
-    Metascore: 57,
-    imdbRating: 8.2,
+  tt0240772: {
+    imdbID: "tt0240772",
+    Title: "Ocean's Eleven",
+    Released: "2001-12-07",
+    Runtime: 116,
+    Genres: ["Crime", "Thriller"],
+    Directors: ["Steven Soderbergh"],
+    Writers: ["George Clayton Johnson", "Jack Golden Russell", "Harry Brown", "Charles Lederer", "Ted Griffin"],
+    Actors: ["George Clooney", "Brad Pitt", "Julia Roberts"],
+    Plot: "Danny Ocean rounds up a gang of associates to stage a sophisticated and elaborate casino heist involving three Las Vegas casinos during a popular boxing event.",
+    Poster: "https://m.media-amazon.com/images/M/MV5BMmNhZDkxYTgtMDM3ZC00NTQ3LWFjZTUtNzc1Y2QyNWZjNDRmXkEyXkFqcGc@._V1_SX1200.jpg",
+    Metascore: 74,
+    imdbRating: 7.7
+  },
+
+  tt2911666: {
+    imdbID: "tt2911666",
+    Title: "John Wick",
+    Released: "2014-10-24",
+    Runtime: 101,
+    Genres: ["Action", "Crime", "Thriller"],
+    Directors: ["Chad Stahelski"],
+    Writers: ["Derek Kolstad"],
+    Actors: ["Keanu Reeves", "Michael Nyqvist", "Alfie Allen"],
+    Plot: "An ex-hitman comes out of retirement to track down the gangsters who killed his dog and stole his car.",
+    Poster: "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX1200.jpg",
+    Metascore: 68,
+    imdbRating: 7.4
+  },
+
+  tt1074638: {
+    imdbID: "tt1074638",
+    Title: "Skyfall",
+    Released: "2012-11-09",
+    Runtime: 143,
+    Genres: ["Action", "Adventure", "Thriller"],
+    Directors: ["Sam Mendes"],
+    Writers: ["Neal Purvis", "Robert Wade", "John Logan"],
+    Actors: ["Daniel Craig", "Javier Bardem", "Naomie Harris"],
+    Plot: "James Bond's loyalty to M is tested when her past comes back to haunt her, while MI6 comes under attack.",
+    Poster: "https://m.media-amazon.com/images/M/MV5BNjAzMWNkODUtM2FlMi00NzgyLWJhMGUtMWEyNDYyZGFiN2RlXkEyXkFqcGc@._V1_SX1200.jpg",
+    Metascore: 81,
+    imdbRating: 7.8
+  },
+
+  tt0325980: {
+    imdbID: "tt0325980",
+    Title: "Pirates of the Caribbean: The Curse of the Black Pearl",
+    Released: "2003-07-09",
+    Runtime: 143,
+    Genres: ["Action", "Adventure", "Fantasy"],
+    Directors: ["Gore Verbinski"],
+    Writers: ["Ted Elliott", "Terry Rossio", "Stuart Beattie"],
+    Actors: ["Johnny Depp", "Geoffrey Rush", "Orlando Bloom"],
+    Plot: "Blacksmith Will Turner teams up with eccentric pirate Jack Sparrow to save Elizabeth Swann from cursed pirates.",
+    Poster: "https://m.media-amazon.com/images/M/MV5BNDhlMzEyNzItMTA5Mi00YWRhLThlNTktYTQyMTA0MDIyNDEyXkEyXkFqcGc@._V1_SX1200.jpg",
+    Metascore: 63,
+    imdbRating: 8.1
+  },
+
+  tt2084970: {
+    imdbID: "tt2084970",
+    Title: "The Imitation Game",
+    Released: "2014-12-25",
+    Runtime: 114,
+    Genres: ["Biography", "Drama", "Thriller"],
+    Directors: ["Morten Tyldum"],
+    Writers: ["Graham Moore", "Andrew Hodges"],
+    Actors: ["Benedict Cumberbatch", "Keira Knightley", "Matthew Goode"],
+    Plot: "During World War II, mathematician Alan Turing tries to crack the German Enigma code with help from fellow code-breakers.",
+    Poster: "https://m.media-amazon.com/images/M/MV5BNjI3NjY1Mjg3MV5BMl5BanBnXkFtZTgwMzk5MDQ3MjE@._V1_SX1200.jpg",
+    Metascore: 73,
+    imdbRating: 8.0
+  },
+
+  tt0232500: {
+    imdbID: "tt0232500",
+    Title: "The Fast and the Furious",
+    Released: "2001-06-22",
+    Runtime: 106,
+    Genres: ["Action", "Crime", "Thriller"],
+    Directors: ["Rob Cohen"],
+    Writers: ["Ken Li", "Gary Scott Thompson", "Erik Bergquist"],
+    Actors: ["Vin Diesel", "Paul Walker", "Michelle Rodriguez"],
+    Plot: "An undercover cop infiltrates the world of illegal street racing while investigating a group of suspected hijackers.",
+    Poster: "https://m.media-amazon.com/images/M/MV5BZGRiMDE1NTMtMThmZS00YjE4LWI1ODQtNjRkZGZlOTg2MGE1XkEyXkFqcGc@._V1_SX1200.jpg",
+    Metascore: 58,
+    imdbRating: 6.8
+  },
+
+  tt1464335: {
+    imdbID: "tt1464335",
+    Title: "Uncharted",
+    Released: "2022-02-18",
+    Runtime: 116,
+    Genres: ["Action", "Adventure"],
+    Directors: ["Ruben Fleischer"],
+    Writers: ["Rafe Judkins", "Art Marcum", "Matt Holloway"],
+    Actors: ["Tom Holland", "Mark Wahlberg", "Antonio Banderas"],
+    Plot: "Street-smart Nathan Drake is recruited by treasure hunter Victor Sullivan to recover a lost fortune.",
+    Poster: "https://m.media-amazon.com/images/M/MV5BYjQxYWNiNzgtOTc2Yi00OGEwLTk5MjAtODdiZTk0ZDJlZGY4XkEyXkFqcGc@._V1_SX1200.jpg",
+    Metascore: 45,
+    imdbRating: 6.3
   },
 
   tt0120737: {
@@ -70,8 +159,7 @@ module.exports = {
     Writers: ["J.R.R. Tolkien", "Fran Walsh", "Philippa Boyens"],
     Actors: ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
     Plot: "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
-    Poster:
-      "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+    Poster: "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX1200.jpg",
     Metascore: 92,
     imdbRating: 8.8,
   },
@@ -86,8 +174,7 @@ module.exports = {
     Writers: ["Graham Chapman", "John Cleese", "Terry Gilliam"],
     Actors: ["John Cleese", "Terry Gilliam", "Eric Idle"],
     Plot: "The comedy team takes a look at life in all of its stages in their own uniquely silly way.",
-    Poster:
-      "https://m.media-amazon.com/images/M/MV5BZWJkNGY5MDAtYmVkMy00NzdiLTk5MzctMzA0MjMxMDY2NGYwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    Poster: "https://m.media-amazon.com/images/M/MV5BZWJkNGY5MDAtYmVkMy00NzdiLTk5MzctMzA0MjMxMDY2NGYwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX1200.jpg",
     Metascore: 72,
     imdbRating: 7.5,
   },
@@ -102,8 +189,7 @@ module.exports = {
     Writers: ["Danny Rubin", "Harold Ramis"],
     Actors: ["Bill Murray", "Andie MacDowell", "Chris Elliott"],
     Plot: "A narcissistic, self-centered weatherman finds himself in a time loop on Groundhog Day, and the day keeps repeating until he gets it right.",
-    Poster:
-      "https://m.media-amazon.com/images/M/MV5BZWIxNzM5YzQtY2FmMS00Yjc3LWI1ZjUtNGVjMjMzZTIxZTIxXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    Poster: "https://m.media-amazon.com/images/M/MV5BZWIxNzM5YzQtY2FmMS00Yjc3LWI1ZjUtNGVjMjMzZTIxZTIxXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX1200.jpg",
     Metascore: 72,
     imdbRating: 8.1,
   },
@@ -118,12 +204,11 @@ module.exports = {
     Writers: ["John Irving"],
     Actors: ["Tobey Maguire", "Charlize Theron", "Michael Caine"],
     Plot: "A compassionate young man, raised in an orphanage and trained to be a doctor there, decides to leave to see the world.",
-    Poster:
-      "https://m.media-amazon.com/images/M/MV5BNmY5YzA4OTQtOTQzZS00NDZmLTlhNzQtNzk5NTIyZWE2ZjVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    Poster: "https://m.media-amazon.com/images/M/MV5BNmY5YzA4OTQtOTQzZS00NDZmLTlhNzQtNzk5NTIyZWE2ZjVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX1200.jpg",
     Metascore: 75,
     imdbRating: 7.4,
   },
-  
+
   tt0248808: {
     imdbID: "tt0248808",
     Title: "For the Birds",
@@ -134,8 +219,7 @@ module.exports = {
     Writers: ["Ralph Eggleston"],
     Actors: ["Ralph Eggleston"],
     Plot: "A group of snooty birds roosting on a telephone wire get their just deserts when a goofy bird drops in.",
-    Poster:
-      "https://m.media-amazon.com/images/M/MV5BZjBhYzgyY2YtMTBhZS00NWIwLWIyYTgtMzhhYmFhZDNkMTQxXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg",
+    Poster: "https://m.media-amazon.com/images/M/MV5BZjBhYzgyY2YtMTBhZS00NWIwLWIyYTgtMzhhYmFhZDNkMTQxXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX1200.jpg",
     Metascore: 0.1,
     imdbRating: 8.0,
   }
