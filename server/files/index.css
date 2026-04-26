@@ -8,45 +8,26 @@ body {
 body {
   margin: 0;
   padding: 20px;
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  /*??*/
   grid-template-areas:
     "h"
     "n"
     "m"
     "f";
   grid-template-rows: auto auto 1fr auto;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr;
   gap: 20px;
   background-color: #f4f4f4;
   color: #222;
 }
 
-
 header {
   grid-area: h;
-}
-
-nav {
-  grid-area: n;
-}
-
-main {
-  grid-area: m;
-  overflow-y: auto;
-}
-
-footer {
-  grid-area: f;
-}
-
-
-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("header-background.jpg");
+  background-image: url("images/Header-Background2.png");
   background-size: cover;
   background-position: center;
   min-height: 180px;
@@ -56,22 +37,20 @@ header {
 
 header h1 {
   font-family: "Libre Baskerville", serif;
-  color: white;
+  font-weight: bold;
+  color:#f7f1e8;
   font-size: 300%;
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
 }
 
-
-/* Navigation */
 nav {
+  grid-area: n;
   background-color: white;
   border-radius: 12px;
   padding: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-
-/* Nav Flexbox */
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -98,9 +77,10 @@ nav button:hover {
   background-color: #d8cbbb;
 }
 
-
-/* Main Flexbox */
 main {
+  grid-area: m;
+  overflow-y: auto;
+  min-height: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -108,8 +88,6 @@ main {
   justify-content: center;
 }
 
-
-/* Movie cards from Exercise 2 style */
 article {
   background-color: white;
   border-radius: 12px;
@@ -168,17 +146,8 @@ article button {
   margin-top: 4px;
 }
 
-/* Remove unnecessary space and bullets from the lists 
-ul {
-  padding: 0px;
-  margin: 16px;
-  list-style-type: none;
-}
-*/
-
-
-/* Footer Flexbox */
 footer {
+  grid-area: f;
   background-color: white;
   border-radius: 12px;
   padding: 12px;
@@ -198,8 +167,6 @@ footer a {
   color: #222;
 }
 
-
-/* Desktop layout with Grid Template Areas */
 @media (min-width: 900px) {
   body {
     grid-template-areas:
@@ -218,20 +185,3 @@ footer a {
     width: 100%;
   }
 }
-
-/* Task 2.1. Lay out the childs of the 'body' using Grid Template Areas. */
-
-
-/* Task 3.1. Make the header element a flex container and center its children
-   vertically and horizontally.
- */
-
-
-/* Task 3.2. Make the list items of the unordered list in the nav element a flex container, 
-   use column direction and center the child items
- */
-
-/* Task 3.3. Make the main element a Flexbox container */
-
-
-/* Task 3.4. Make the footer's ul a Flexbox container */
