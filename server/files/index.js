@@ -34,6 +34,14 @@ function appendMovie(movie, element) {
       new Date(movie.Released).toLocaleDateString("en-US")))
     .append(new ParagraphBuilder().childClass("genre").items(movie.Genres))
     .append(new ElementBuilder("p").text(movie.Plot))
+    .append(
+      new ParagraphBuilder()
+      .childClass("rating")
+      .items(
+        "Metascore: " + movie.Metascore,
+        "IMDb Rating: " + movie.imdbRating
+      )
+    )
     .append(new ElementBuilder("h2").pluralizedText("Director", movie.Directors))
     .append(new ListBuilder().items(movie.Directors))
     .append(new ElementBuilder("h2").pluralizedText("Writer", movie.Writers))
